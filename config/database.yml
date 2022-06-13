@@ -14,9 +14,9 @@ default: &default
   encoding: utf8
   pool: 5
   database: task_2
-  username: root
-  password: password
-  host: mysql
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+  host: <%= ENV['MYSQL_HOST'] %>
 
 development:
   <<: *default

@@ -948,3 +948,739 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 172.27.0.1 at 2022-06-10 08:09:02 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Mysql2::Error::ConnectionError (Can't connect to MySQL server on '127.0.0.1' (111 "Connection refused")):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `shop1_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `shop1_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4103367137455831560', 0)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateShops (20190108190451)
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE `shops` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` text, `excost` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190108190451_create_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190451')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateActiveStorageTables (20190108190657)
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190657')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to DeviseCreateUsers (20190109050003)
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:5
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:39
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050003')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToShops (20190109050147)
+  [1m[35m (7.0ms)[0m  [1m[35mALTER TABLE `shops` ADD `user_id` int[0m
+  ↳ db/migrate/20190109050147_add_column_user_id_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050147')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnCategoryToShops (20190109184105)
+  [1m[35m (6.7ms)[0m  [1m[35mALTER TABLE `shops` ADD `category` varchar(255)[0m
+  ↳ db/migrate/20190109184105_add_column_category_to_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109184105')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateRequests (20190110172016)
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE `requests` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` text, `category` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190110172016_create_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110172016')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToRequests (20190110173211)
+  [1m[35m (6.5ms)[0m  [1m[35mALTER TABLE `requests` ADD `user_id` int[0m
+  ↳ db/migrate/20190110173211_add_column_user_id_to_requests.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110173211')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactToShops (20190111133825)
+  [1m[35m (6.8ms)[0m  [1m[35mALTER TABLE `shops` ADD `contact` varchar(255)[0m
+  ↳ db/migrate/20190111133825_add_column_contact_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133825')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnAddressToShops (20190111133846)
+  [1m[35m (6.8ms)[0m  [1m[35mALTER TABLE `shops` ADD `address` text[0m
+  ↳ db/migrate/20190111133846_add_column_address_to_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133846')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnShopidToRequests (20190113130200)
+  [1m[35m (7.2ms)[0m  [1m[35mALTER TABLE `requests` ADD `shopid` int[0m
+  ↳ db/migrate/20190113130200_add_column_shopid_to_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113130200')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactdetailsToRequests (20190113152913)
+  [1m[35m (6.8ms)[0m  [1m[35mALTER TABLE `requests` ADD `contactdetails` text[0m
+  ↳ db/migrate/20190113152913_add_column_contactdetails_to_requests.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113152913')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-06-12 03:40:30', '2022-06-12 03:40:30')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4103367137455831560')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Started GET "/" for 172.27.0.1 at 2022-06-12 03:40:48 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.27.0.1 at 2022-06-12 03:40:48 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (8.3ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 2652ms (Views: 2638.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_up" for 172.27.0.1 at 2022-06-12 03:42:29 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.27.0.1 at 2022-06-12 03:42:40 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y9aMkfyv555w+KZz2PHg/c4KEbR58qZFd0EhDPDHPQK0cZhbbvcAZEG81dfzAd285+QwXizYLZbjO59AlZS7eQ==", "user"=>{"email"=>"hola@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hola@gmail.com' LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('hola@gmail.com', '$2a$11$.ClFxJ14LF0yEi3FuErGqucK5maYQSlpiaSuifKJergxQ2/BBdujC', '2022-06-12 03:42:40', '2022-06-12 03:42:40')[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3001/
+Completed 302 Found in 113ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 172.27.0.1 at 2022-06-12 03:42:40 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.5ms)[0m  [1m[34mSELECT `shops`.* FROM `shops` WHERE `shops`.`user_id` = 1[0m
+  ↳ app/views/shops/index.html.erb:21
+  Rendered shops/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 19.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/shops/new" for 172.27.0.1 at 2022-06-12 03:43:43 +0000
+Cannot render console from 172.27.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Mysql2::Error::ConnectionError (Unknown MySQL server host 'db' (-3)):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:115:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:115:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/mysql2_adapter.rb:96:in `reconnect!'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract_adapter.rb:435:in `verify!'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:860:in `block in checkout_and_verify'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.2) lib/active_support/callbacks.rb:816:in `_run_checkout_callbacks'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:859:in `checkout_and_verify'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `shop1_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `shop1_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4103367137455831560', 0)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateShops (20190108190451)
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE `shops` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` text, `excost` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190108190451_create_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190451')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateActiveStorageTables (20190108190657)
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190657')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to DeviseCreateUsers (20190109050003)
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:5
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:39
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050003')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToShops (20190109050147)
+  [1m[35m (7.0ms)[0m  [1m[35mALTER TABLE `shops` ADD `user_id` int[0m
+  ↳ db/migrate/20190109050147_add_column_user_id_to_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050147')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnCategoryToShops (20190109184105)
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE `shops` ADD `category` varchar(255)[0m
+  ↳ db/migrate/20190109184105_add_column_category_to_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109184105')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateRequests (20190110172016)
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE `requests` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` text, `category` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190110172016_create_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110172016')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToRequests (20190110173211)
+  [1m[35m (7.7ms)[0m  [1m[35mALTER TABLE `requests` ADD `user_id` int[0m
+  ↳ db/migrate/20190110173211_add_column_user_id_to_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110173211')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactToShops (20190111133825)
+  [1m[35m (7.0ms)[0m  [1m[35mALTER TABLE `shops` ADD `contact` varchar(255)[0m
+  ↳ db/migrate/20190111133825_add_column_contact_to_shops.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133825')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnAddressToShops (20190111133846)
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE `shops` ADD `address` text[0m
+  ↳ db/migrate/20190111133846_add_column_address_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133846')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnShopidToRequests (20190113130200)
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE `requests` ADD `shopid` int[0m
+  ↳ db/migrate/20190113130200_add_column_shopid_to_requests.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113130200')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactdetailsToRequests (20190113152913)
+  [1m[35m (7.3ms)[0m  [1m[35mALTER TABLE `requests` ADD `contactdetails` text[0m
+  ↳ db/migrate/20190113152913_add_column_contactdetails_to_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113152913')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-06-12 03:51:25', '2022-06-12 03:51:25')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4103367137455831560')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Started GET "/" for 172.18.0.1 at 2022-06-12 03:52:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 12ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/sign_in" for 172.18.0.1 at 2022-06-12 03:52:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 195ms (Views: 187.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2022-06-12 04:20:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.18.0.1 at 2022-06-12 04:20:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.18.0.1 at 2022-06-12 04:20:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-12 04:21:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1f4V8t7MZevNJspdTjmSy0+CQmkMhTC9ZBtUNnKJm3o8OydWSPWbZ5w6I1eyNsKBNAo4/EYnxFh6tMcvJmgFg==", "user"=>{"email"=>"hola@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hola@gmail.com' LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 166ms (Views: 22.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 172.18.0.1 at 2022-06-12 04:21:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K6qsZADwPF4ICsv8a/8NzO33hrDSRAoTrJ2IB0WP0cpYzIQgPgmEX9bj06UxHSK+a5AEnjyep7AjlO7r9we6Gg==", "user"=>{"email"=>"hola@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hola@gmail.com' LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('hola@gmail.com', '$2a$11$.7WagitHWv.ivD8712z5m.SxqkUkzL6YOIkSMDZhNxQGMWIFN8R/K', '2022-06-12 04:21:14', '2022-06-12 04:21:14')[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3001/
+Completed 302 Found in 117ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 172.18.0.1 at 2022-06-12 04:21:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering shops/index.html.erb within layouts/application
+  [1m[36mShop Load (0.4ms)[0m  [1m[34mSELECT `shops`.* FROM `shops` WHERE `shops`.`user_id` = 1[0m
+  ↳ app/views/shops/index.html.erb:21
+  Rendered shops/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 20.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/shops/new" for 172.18.0.1 at 2022-06-12 04:21:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ShopsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering shops/new.html.erb within layouts/application
+  Rendered shops/_form.html.erb (10.8ms)
+  Rendered shops/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 77ms (Views: 57.4ms | ActiveRecord: 1.9ms)
+
+
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `shop1_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `shop1_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4103367137455831560', 0)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4103367137455831560')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Started GET "/" for 172.18.0.1 at 2022-06-13 01:51:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.18.0.1 at 2022-06-13 01:51:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 348ms (Views: 336.0ms | ActiveRecord: 2.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `shop1_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `shop1_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4103367137455831560', 0)[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateShops (20190108190451)
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE `shops` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` text, `excost` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190108190451_create_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190451')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateActiveStorageTables (20190108190657)
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  ↳ db/migrate/20190108190657_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190108190657')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to DeviseCreateUsers (20190109050003)
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:5
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:39
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190109050003_devise_create_users.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050003')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToShops (20190109050147)
+  [1m[35m (8.3ms)[0m  [1m[35mALTER TABLE `shops` ADD `user_id` int[0m
+  ↳ db/migrate/20190109050147_add_column_user_id_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109050147')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnCategoryToShops (20190109184105)
+  [1m[35m (7.6ms)[0m  [1m[35mALTER TABLE `shops` ADD `category` varchar(255)[0m
+  ↳ db/migrate/20190109184105_add_column_category_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190109184105')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to CreateRequests (20190110172016)
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE `requests` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` text, `category` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190110172016_create_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110172016')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnUserIdToRequests (20190110173211)
+  [1m[35m (7.5ms)[0m  [1m[35mALTER TABLE `requests` ADD `user_id` int[0m
+  ↳ db/migrate/20190110173211_add_column_user_id_to_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190110173211')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactToShops (20190111133825)
+  [1m[35m (7.2ms)[0m  [1m[35mALTER TABLE `shops` ADD `contact` varchar(255)[0m
+  ↳ db/migrate/20190111133825_add_column_contact_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133825')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnAddressToShops (20190111133846)
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE `shops` ADD `address` text[0m
+  ↳ db/migrate/20190111133846_add_column_address_to_shops.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190111133846')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnShopidToRequests (20190113130200)
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE `requests` ADD `shopid` int[0m
+  ↳ db/migrate/20190113130200_add_column_shopid_to_requests.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113130200')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+Migrating to AddColumnContactdetailsToRequests (20190113152913)
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE `requests` ADD `contactdetails` text[0m
+  ↳ db/migrate/20190113152913_add_column_contactdetails_to_requests.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190113152913')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /gems/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-06-13 02:04:27', '2022-06-13 02:04:27')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4103367137455831560')[0m
+  ↳ /gems/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/bin/rake:23
+Started GET "/" for 172.19.0.1 at 2022-06-13 02:04:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /gems/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ShopsController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2022-06-13 02:04:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /gems/gems/devise-4.5.0views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /gems/gems/devise-4.5.0views/devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 318ms (Views: 305.0ms | ActiveRecord: 2.8ms)
+
+
